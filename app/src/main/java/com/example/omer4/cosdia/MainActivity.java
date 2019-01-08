@@ -59,11 +59,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add("credits");
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Toast.makeText(MainActivity.this, "This application was programed by Omer Eikly",Toast.LENGTH_LONG).show();
+
         return super.onOptionsItemSelected(item);
     }
 
